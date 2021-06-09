@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextArea editable="false" layoutX="200.0" layoutY="157.0" prefHeight="233.0" prefWidth="580.0"
+                  text="C’est un jeu de stratégie dont l’objectif est de capturer le plus de &#10;points de votre concurrent. &#10;&#10;C’est un jeu russe qui se joue sur une feuille quadrillée.&#10;Chaque joueur place ses points un à un et celui qui arrive à &#10;capturer le maximum de points de son adversaire aura gagné.&#10;&#10;Les règles :&#10;1) Un point peut former un arc uniquement avec un autre point &#10;qui lui est semblable et qui n’a pas été capturé situé dans les &#10;huits directions autorisées (haut, bas, gauche, droite, et les &#10;diagonales).&#10;&#10;2) Une capture est autorisée si elle inclut un nouveau point de &#10;notre concurrent.&#10;&#10;3) Si on capture un ensemble de points de notre concurrent qui a &#10;jadis fait une capture, ce dernier perd sa capture.&#10;&#10;Le jeu prend fin une fois qu’aucune capture ne soit possible ou &#10;un des joueurs décide d’abandonner." AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="157.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextArea>
+        <ImageView fitHeight="155.0" fitWidth="386.0" layoutX="113.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@icon.png" />
+        </ImageView>
+    </children>
+</AnchorPane>

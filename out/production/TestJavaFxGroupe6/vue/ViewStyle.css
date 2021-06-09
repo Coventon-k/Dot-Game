@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.button:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #be1d00;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #0000ff;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-width: 1.9;
+}
+
+.text-field:focused {
+    -fx-border-color: #ff0000;
+}

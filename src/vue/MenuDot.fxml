@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="565.0"
+            xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMenu">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="399.0" spacing="40.0">
+               <children>
+                  <Label text="Player 1" textAlignment="CENTER" textFill="#4104da">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="field_PlayerOne" alignment="CENTER_RIGHT">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="399.0" spacing="40.0">
+               <children>
+                  <Label text="Player 2" textAlignment="CENTER" textFill="#ee0b0b">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="field_PlayerTwo" alignment="CENTER_RIGHT">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="399.0" spacing="70.0">
+               <children>
+                  <Label text="Ligne " textAlignment="CENTER">
+                     <font>
+                        <Font name="DejaVu Serif Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="field_Row" alignment="CENTER_RIGHT">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="399.0" spacing="40.0">
+               <children>
+                  <Label text="Colonne" textAlignment="CENTER">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="field_column" alignment="CENTER_RIGHT">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <Label text="Dots" textFill="#280cda" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="43.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets right="15.0" />
+         </BorderPane.margin></Label>
+   </left>
+   <right>
+      <Label text="Game" textFill="#f80707" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="40.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </right>
+   <bottom>
+      <Button fx:id="btn_start" mnemonicParsing="false" onAction="#start" prefHeight="51.0" prefWidth="126.0" text="Start" textAlignment="CENTER" textFill="#a80990" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </Button>
+   </bottom>
+   <top>
+      <ImageView fitHeight="94.0" fitWidth="329.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <Image url="@dotsImage.png" />
+      </ImageView>
+   </top>
+</BorderPane>
